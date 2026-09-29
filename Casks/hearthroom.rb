@@ -26,6 +26,9 @@ cask "hearthroom" do
   end
 
   binary "hearthroom"
+  binary "completions/hearthroom.bash", target: "#{HOMEBREW_PREFIX}/etc/bash_completion.d/hearthroom"
+  binary "completions/hearthroom.zsh", target: "#{HOMEBREW_PREFIX}/share/zsh/site-functions/_hearthroom"
+  binary "completions/hearthroom.fish", target: "#{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/hearthroom.fish"
 
   # The binaries are not notarized; drop the quarantine flag Homebrew adds to
   # cask downloads so Gatekeeper does not block the first run.
