@@ -3,7 +3,6 @@ cask "hearthroom" do
   desc "Command-line client for Hearthroom character cards"
   homepage "https://cli.hearthroom.club"
   version "0.1.5"
-  license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
